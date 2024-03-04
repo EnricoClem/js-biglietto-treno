@@ -16,17 +16,22 @@ let km_value = (km * 0.21); //number
 if(age <= 17){
     let under_18 = (km_value * 80 / 100); //number
     let ticket = Math.floor (under_18 * 100) / 100; //number
-    console.log(ticket); //number
+    console.log(ticket + ' €'); //number
+    console.log('I giovani di oggi non hanno una lira e neanche voglia di lavorare, eccoti uno sconto del 20%!')
+
 
 // ALTRIMENTI SE è superiore a 18 ma inferiore a 65 non modificare la cifra
 } else if(age > 17 && age < 65){
     let standard = (km_value); //number
     let ticket = Math.floor (standard * 100) / 100; //number
-    console.log(ticket); //number
+    console.log(ticket + ' €'); //number
+    console.log("Troppo vecchio per l'under 18, troppo giovane per l'over 65. Sai solo lo sconto che non avrai.")
+
     
 // ALTRIMENTI oltre il 65 togliere il 40% dal risultato
 } else{
     let over_65 = (km_value * 60 /100); //numbers
     let ticket = Math.floor (over_65 * 100) / 100; //number
     console.log(ticket + ' €'); //number
+    console.log('Complimenti per essere sopravvissuto fino ad oggi boomer! Eccoti uno sconto del 40% per il treno che decrepito come sei a piedi non vai sicuramente da nessuna parte.' )
 }
