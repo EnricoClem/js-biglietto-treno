@@ -4,7 +4,11 @@
 console.log('Ciao mondo');
 
 // OTTEENRE il costo in base ai kilometri
-// Moltiplicare il valore inserito per 0.21
+// Chiedere all'utente quanti kilometri vuole percorrere e qual'è la sua età
+const km = prompt ('Quanti kilometri vuoi percorrere?')
+const age = prompt ('Quanti anni hai?')
+
+// calcolare il valore inserito moltiplicandolo per 0.21
 
 // Modificare il risultato in base all'età dell'utente
 // SE l'età è sotto i 18 togliere il 20% dal risultato
